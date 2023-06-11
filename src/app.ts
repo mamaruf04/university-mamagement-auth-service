@@ -17,7 +17,8 @@ app.use('/api/v1/users/', UserRoutes)
 //Testing
 // app.get('/', async (req: Request, res: Response, next: NextFunction) => {
 //   // res.send('Working Successfully')
-//   throw new ApiError('this is a error testing')
+//   //   throw new ApiError(400, 'this is a error testing')
+//   Promise.reject(new Error('unhandled rejection'))
 // })
 
 // global error handler
